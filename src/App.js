@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import './App.css'; // We'll use this for global styles
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="app-container">
+      <Header />
+      <main className="main-content">
+        <div className="welcome-card">
+          <h2>Welcome to the Art of Flow</h2>
+          <p>
+            This is the starting point for your application. From here, you can build out the features for tracking habits, analyzing your performance, and mastering the principles of flow.
+          </p>
+        </div>
+      </main>
+      <footer className="footer">
+        <h3>Flow is a Trainable Skill</h3>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Peak performance is not an accident. It's the result of intentionally designing your life, mind, and environment.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </footer>
     </div>
   );
 }

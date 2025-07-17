@@ -1,0 +1,59 @@
+.header {
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #005F73, #9B2226);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  color: #475569;
+  margin-top: 0.25rem;
+}
+
+.loginButton {
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+  text-decoration: none;
+  color: #475569;
+}
+
+.loginButton:hover {
+  background-color: #f1f5f9;
+}
+
+.signupButton {
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-image: linear-gradient(to right, #005F73, #0A9396);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  transition: opacity 0.2s;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.signupButton:hover {
+  opacity: 0.9;
+}
